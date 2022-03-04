@@ -1,0 +1,56 @@
+@import "mixins";
+@import "variables";
+
+.podcast-content-container {
+    max-height: 100vh;
+    background: url("../images/image-host-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // margin-top: 8rem;
+    // margin-left: 11rem;
+    background-position: top 4rem left 28rem;
+
+    .podcast-logo {
+        padding-top: 2rem;
+        padding-left: 8rem;
+    }
+
+    .podcast-content {
+        padding: 4rem 1rem 2rem 8rem;
+        background: $background-color;
+        width: 70%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+
+        .podcast-heading {
+            color: $heading-color;
+            font-weight: 200;
+            font-size: 3rem;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        .podcast-text {
+            color: #fff;
+            font-weight: 300;
+            font-size: 1.125rem;
+            padding: 2rem 0;
+            width: 60%;
+            opacity: 0.7;
+        }
+    }
+
+    .dots-container {
+        position: absolute;
+        left: 81%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: -3rem;
+    }
+}

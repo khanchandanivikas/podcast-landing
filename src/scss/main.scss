@@ -7,14 +7,16 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     overflow: hidden;
     min-height: 100vh;
+    background: $background-color;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
+// img {
+//     width: 100%;
+//     height: auto;
+// }
 
 p {
     line-height: 1.625rem;
     letter-spacing: 1px;
 }
+

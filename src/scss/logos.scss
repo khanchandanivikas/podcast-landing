@@ -1,0 +1,11 @@
+@import "variables";
+
+.logos-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    img {
+        margin-right: 3rem;
+    }
+}
