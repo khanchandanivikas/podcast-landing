@@ -29,6 +29,7 @@
             cursor: pointer;
             background-color: $hover-color;
         }
+
         @include media-md {
             width: 90%;
             margin-top: 1rem;

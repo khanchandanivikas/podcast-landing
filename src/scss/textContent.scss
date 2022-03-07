@@ -27,30 +27,40 @@
         @include media-xl {
             padding-left: 3rem;
         }
+        @include media-lg {
+            padding-left: 2rem;
+        }
+
+        @include media-md {
+            padding-left: 1rem;
+        }
     }
 
     .podcast-content {
         padding: 4rem 1rem 1rem 8rem;
         background: $background-color;
         width: 70%;
-        margin-top: 10rem;
+        margin-top: 4rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: space-between;
 
         @include media-xl {
+            margin-top: 8rem;
             padding: 4rem 1rem 8rem 3rem;
+        }
+
+        @include media-lg {
+            margin-top: 6rem;
+            padding: 4rem 1rem 8rem 2rem;
         }
 
         @include media-md {
             width: 100%;
             background: transparent;
-            margin-top: 6rem;
-        }
-
-        @include media-sm {
-            margin-top: 2rem;
+            margin-top: 0;
+            padding: 4rem 1rem 8rem 1rem;
         }
 
         .podcast-heading {
@@ -97,6 +107,10 @@
             align-items: flex-start;
             margin-top: -2rem;
             padding-left: 3rem;
+        }
+
+        @include media-sm {
+           display: none;
         }
     }
 }
