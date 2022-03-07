@@ -2,33 +2,65 @@
 @import "variables";
 
 .podcast-content-container {
-    max-height: 100vh;
     background: url("../images/image-host-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    // margin-top: 8rem;
-    // margin-left: 11rem;
     background-position: top 4rem left 28rem;
 
+    @include media-xl {
+        background: url("../images/image-host-tablet.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left 16rem;
+        min-height: 70vh;
+    }
+
+    @include media-md {
+        background-image: linear-gradient(rgb(18, 23, 37, 0.7), rgb(18, 23, 37, 0.7)), url('../images/image-host-mobile.jpg');
+        background-position: top right;
+    }
+
     .podcast-logo {
-        padding-top: 2rem;
+        padding-top: 0.5rem;
         padding-left: 8rem;
+
+        @include media-xl {
+            padding-left: 3rem;
+        }
     }
 
     .podcast-content {
-        padding: 4rem 1rem 2rem 8rem;
+        padding: 4rem 1rem 1rem 8rem;
         background: $background-color;
         width: 70%;
-        margin-top: 2rem;
+        margin-top: 10rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: space-between;
 
+        @include media-xl {
+            padding: 4rem 1rem 8rem 3rem;
+        }
+
+        @include media-md {
+            width: 100%;
+            background: transparent;
+            margin-top: 6rem;
+        }
+
+        @include media-sm {
+            margin-top: 2rem;
+        }
+
         .podcast-heading {
             color: $heading-color;
             font-weight: 200;
             font-size: 3rem;
+
+            @include media-md {
+                font-size: 2rem;
+            }
 
             span {
                 color: #fff;
@@ -42,15 +74,29 @@
             padding: 2rem 0;
             width: 60%;
             opacity: 0.7;
+
+            @include media-xl {
+                width: 90%;
+            }
         }
     }
 
     .dots-container {
+        width: 100%;
         position: absolute;
-        left: 81%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         margin-top: -3rem;
+
+        @include media-xl {
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: -2rem;
+            padding-left: 3rem;
+        }
     }
 }

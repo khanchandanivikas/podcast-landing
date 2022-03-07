@@ -9,6 +9,10 @@
         outline: none;
         border: none;
         padding: 1rem 2.5rem;
+
+        @include media-md {
+            width: 90%;
+        }
     }
 
     button {
@@ -24,6 +28,10 @@
         &:hover {
             cursor: pointer;
             background-color: $hover-color;
+        }
+        @include media-md {
+            width: 90%;
+            margin-top: 1rem;
         }
     }
 }

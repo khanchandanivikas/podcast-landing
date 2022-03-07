@@ -1,11 +1,23 @@
 @import "variables";
+@import "mixins";
 
 .logos-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     margin-top: 2rem;
 
+    @include media-lg {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
     img {
         margin-right: 3rem;
+
+        @include media-sm {
+            margin-right: 0;
+        }
     }
 }
