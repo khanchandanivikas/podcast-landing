@@ -27,6 +27,7 @@
         @include media-xl {
             padding-left: 3rem;
         }
+
         @include media-lg {
             padding-left: 2rem;
         }
@@ -64,7 +65,7 @@
         }
 
         @include media-sm {
-            padding: 4rem 1rem 2rem 1rem;
+            padding: 4rem 1rem 1rem 1rem;
         }
 
         .podcast-heading {
@@ -114,7 +115,7 @@
         }
 
         @include media-sm {
-           display: none;
+            display: none;
         }
     }
 }
