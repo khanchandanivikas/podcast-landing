@@ -63,6 +63,10 @@
             padding: 4rem 1rem 8rem 1rem;
         }
 
+        @include media-sm {
+            padding: 4rem 1rem 0rem 1rem;
+        }
+
         .podcast-heading {
             color: $heading-color;
             font-weight: 200;
